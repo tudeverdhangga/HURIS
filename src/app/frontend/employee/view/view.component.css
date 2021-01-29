@@ -1,0 +1,35 @@
+.create-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 17px;
+}
+  
+.readonly-wrapper {
+    width: 100%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+  
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: blue;
+}
+
+.mat-label {
+    color: black;
+}
+
+.button {
+    color: white;
+    margin-right: 7px;
+}
+
+.button.submit {
+    background-color: #1c70df;
+    width: 100px;
+}
+
+.button.back {
+    background-color: grey;
+    width: 100px;
+}

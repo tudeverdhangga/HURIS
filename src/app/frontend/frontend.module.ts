@@ -8,6 +8,7 @@ import { AngularMaterialModule } from '../angular-material.module';
 import { ConfirmationDialogComponent } from './employee/modal/confirmation-dialog/confirmation-dialog.component';
 import { CreateComponent } from './employee/create/create.component';
 import { EditComponent } from './employee/edit/edit.component';
+import { ViewComponent } from './employee/view/view.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { EditComponent } from './employee/edit/edit.component';
     ConfirmationDialogComponent,
     CreateComponent,
     EditComponent,
+    ViewComponent,
   ],
   imports: [
     CommonModule,
