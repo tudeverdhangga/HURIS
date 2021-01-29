@@ -33,8 +33,8 @@
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef ngClass="text-center align-middle header"> Action </th>
           <td mat-cell *matCellDef="let element" ngClass="align-middle"> 
-            <a href="#" type="button"> <mat-icon>edit</mat-icon> </a>
-            <a href="#" type="button"> <mat-icon>delete</mat-icon> </a>
+            <button mat-icon-button type="button"> <mat-icon>edit</mat-icon> </button>
+            <button mat-icon-button type="button" (click)="onDelete(element.id)"> <mat-icon>delete</mat-icon> </button>
           </td>
         </ng-container>
       
