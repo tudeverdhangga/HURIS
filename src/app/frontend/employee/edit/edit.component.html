@@ -1,24 +1,24 @@
 <mat-card ngClass="card-content p-4">
     <section class="mat-typography title-group">
-      <h1>Create Employee</h1>
+      <h1>Edit Employee</h1>
     </section>
     <hr>
     <form class="create-form">
         <mat-form-field class="create-full-width">
             <mat-label class="mat-label">First Name</mat-label>
-            <input matInput>
+            <input matInput value="{{employee.firstName}}">
         </mat-form-field>
         <mat-form-field class="create-full-width">
             <mat-label class="mat-label">Last Name</mat-label>
-            <input matInput>
+            <input matInput value="{{employee.lastName}}">
         </mat-form-field>
         <mat-form-field class="create-full-width">
             <mat-label class="mat-label">Phone</mat-label>
-            <input matInput>
+            <input matInput value="{{employee.phone}}">
         </mat-form-field>
         <mat-form-field class="create-full-width">
             <mat-label class="mat-label">Email</mat-label>
-            <input matInput>
+            <input matInput value="{{employee.email}}">
         </mat-form-field>
         <button mat-raised-button class="button submit" (click)="onSubmit()">Submit</button>
         <button mat-raised-button class="button back" (click)="redirectBack()">Back</button>
