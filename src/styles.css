@@ -16,6 +16,12 @@ body {
     color: black;
 }
 
+.btn.create {
+    width: 130px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+}
+
 /* Confirmation Dialog */
 .btn-dialog-close{
     width: 45px;

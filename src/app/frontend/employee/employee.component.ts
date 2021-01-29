@@ -10,43 +10,7 @@ import { ConfirmationDialogComponent } from './modal/confirmation-dialog/confirm
 })
 export class EmployeeComponent implements OnInit {
   
-  employee: Employee[] = [
-    {
-      "id": 1,
-      "firstName": "Krish",
-      "lastName": "Lee",
-      "phone": "123456",
-      "email": "krish.lee@learningcontainer.com"
-    },
-    {
-      "id": 2,
-      "firstName": "racks",
-      "lastName": "jacson",
-      "phone": "123456",
-      "email": "racks.jacson@learningcontainer.com"
-    },
-    {
-      "id": 3,
-      "firstName": "denial",
-      "lastName": "roast",
-      "phone": "33333333",
-      "email": "denial.roast@learningcontainer.com"
-    },
-    {
-      "id": 4,
-      "firstName": "devid",
-      "lastName": "neo",
-      "phone": "222222222",
-      "email": "devid.neo@learningcontainer.com"
-    },
-    {
-      "id": 5,
-      "firstName": "jone",
-      "lastName": "mac",
-      "phone": "111111111",
-      "email": "jone.mac@learningcontainer.com"
-    }
-  ];
+  employee: Employee[] = require("../../model/employee.json");
 
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'phone', 'email', 'action'];
   

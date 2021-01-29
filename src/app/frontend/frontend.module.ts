@@ -7,6 +7,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AngularMaterialModule } from '../angular-material.module';
 import { ConfirmationDialogComponent } from './employee/modal/confirmation-dialog/confirmation-dialog.component';
 import { CreateComponent } from './employee/create/create.component';
+import { EditComponent } from './employee/edit/edit.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CreateComponent } from './employee/create/create.component';
     DashboardComponent, 
     EmployeeComponent, 
     ConfirmationDialogComponent,
-    CreateComponent
+    CreateComponent,
+    EditComponent,
   ],
   imports: [
     CommonModule,
