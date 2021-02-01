@@ -53,7 +53,7 @@
             </div>
         </div>
         
-        <button mat-raised-button class="button submit" type="submit">Submit</button>
+        <button mat-raised-button class="button submit" type="submit" [disabled]="form.invalid">Submit</button>
         <button mat-raised-button class="button back" (click)="redirectBack()">Back</button>
     </form>
 </mat-card>
