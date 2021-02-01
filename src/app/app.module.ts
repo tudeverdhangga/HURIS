@@ -11,9 +11,8 @@ import { SidenavComponent } from './core/sidenav/sidenav.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { ConfirmationDialogComponent } from './pages/employee/confirmation-dialog/confirmation-dialog.component';
-import { CreateComponent } from './pages/employee/create/create.component';
-import { EditComponent } from './pages/employee/edit/edit.component';
-import { ViewComponent } from './pages/employee/view/view.component';
+import { EmployeeRequestComponent } from './pages/employee/employee-request/employee-request.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +21,7 @@ import { ViewComponent } from './pages/employee/view/view.component';
     DashboardComponent,
     EmployeeComponent,
     ConfirmationDialogComponent,
-    CreateComponent,
-    EditComponent,
-    ViewComponent
+    EmployeeRequestComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +29,8 @@ import { ViewComponent } from './pages/employee/view/view.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,7 +10,7 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
 })
 export class EmployeeComponent implements OnInit {
 
-  employee: Employee[] = require("../../model/employee.json");
+  employee: Employee[] = require("../../../assets/employee.json");
 
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'phone', 'email', 'action'];
 
