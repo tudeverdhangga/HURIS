@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Employee } from 'src/app/model/employee';
-import { ConfirmationDialogComponent } from './modal/confirmation-dialog/confirmation-dialog.component';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-employee',
@@ -9,16 +9,16 @@ import { ConfirmationDialogComponent } from './modal/confirmation-dialog/confirm
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  
+
   employee: Employee[] = require("../../model/employee.json");
 
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'phone', 'email', 'action'];
-  
+
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
-  
+
   onDelete(id: number) {
     this.openConfirmDialog("Are you sure delete this data ?")
       .afterClosed().subscribe(res => {
@@ -39,5 +39,4 @@ export class EmployeeComponent implements OnInit {
        }
      });
    }
-
 }
