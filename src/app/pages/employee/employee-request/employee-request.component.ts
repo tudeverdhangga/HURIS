@@ -12,7 +12,7 @@ export class EmployeeRequestComponent implements OnInit {
   id!: number;
   mode!: String;
   employees: Employee[] = require("../../../../assets/employee.json");
-  employee!: Employee;
+  employee: Employee = {} as Employee;
   form!: FormGroup;
 
   constructor(
@@ -25,7 +25,7 @@ export class EmployeeRequestComponent implements OnInit {
       first_name: new FormControl('', Validators.required),
       last_name: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
-      email: new FormControl('', Validators.required),
+      email: new FormControl('', [Validators.required, Validators.email]),
     })
 
     this.activatedRoute.params.subscribe(res => {
@@ -33,11 +33,33 @@ export class EmployeeRequestComponent implements OnInit {
       this.mode = res.mode;
       if (this.mode == "edit" || this.mode == "view")
         this.find(this.id);
+      console.log(this.employee);
     })
   }
 
   get f() {
     return this.form.controls;
+  }
+
+  get isViewOnly() {
+    return this.mode == "view";
+  }
+
+  get title() {
+    switch (this.mode) {
+      case "create":
+        return "Create Employee";
+        break;
+      case "edit":
+        return "Edit Employee";
+        break;
+      case "view":
+        return "View Employee";
+        break;
+      default:
+        return "Wrong Page";
+        break;
+    }
   }
 
   find(id: number) {
