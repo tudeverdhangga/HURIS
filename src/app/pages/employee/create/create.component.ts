@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Employee } from 'src/app/model/employee';
 
 @Component({
   selector: 'app-create',
@@ -26,5 +25,4 @@ export class CreateComponent implements OnInit {
     this.router.navigateByUrl('employee');
     this.showMsg = true;
   }
-
 }

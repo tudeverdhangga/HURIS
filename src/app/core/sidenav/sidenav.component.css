@@ -1,0 +1,8 @@
+.space {
+    justify-content: space-between;
+    background: #17a2b8;
+}
+
+.sidebar {
+    width: 200px;
+}

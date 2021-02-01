@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" ngClass="header space">
+    <span ngClass="nav-tool-items">
+      <mat-icon (click)="sidenav.toggle()" ngClass="hamburger">menu</mat-icon>
+    </span>
+    <span>HURIS</span>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav ngClass="sidebar" #sidenav [mode]="'side'" [(opened)]="opened" [fixedInViewport]="true" [fixedTopGap]>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard">
+          <mat-icon>dashboard</mat-icon> <span ngClass="ml-3">Dashboard</span>
+        </a>
+        <a mat-list-item routerLink="/employee">
+          <mat-icon>person</mat-icon> <span ngClass="ml-3">Employee</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content ngClass="p-5 content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
