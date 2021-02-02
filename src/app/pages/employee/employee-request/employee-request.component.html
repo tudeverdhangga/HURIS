@@ -25,7 +25,7 @@
                 name="last_name"
                 id="last_name"
                 formControlName="last_name"
-                [(ngModel)]="employee!.lastName">
+                [(ngModel)]="employee.lastName">
             <div *ngIf="f.last_name.touched && f.last_name.invalid" class="alert alert-danger">
                 <div *ngIf="f.last_name.errors?.required">Last Name Required</div>
             </div>
@@ -38,7 +38,7 @@
                 name="phone"
                 id="phone"
                 formControlName="phone"
-                [(ngModel)]="employee!.phone">
+                [(ngModel)]="employee.phone">
             <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
                 <div *ngIf="f.phone.errors?.required">Phone Required</div>
             </div>
@@ -51,7 +51,7 @@
                 name="email"
                 id="email"
                 formControlName="email"
-                [(ngModel)]="employee!.email">
+                [(ngModel)]="employee.email">
             <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
                 <div *ngIf="f.email.errors?.required">Email Required</div>
                 <div *ngIf="f.email.errors?.email">Wrong Email Format</div>
