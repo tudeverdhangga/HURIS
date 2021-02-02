@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Employee } from 'src/app/model/employee';
+import { Employee } from 'src/app/model/employee.model';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 
 @Component({
