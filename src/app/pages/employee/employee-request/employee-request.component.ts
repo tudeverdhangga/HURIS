@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Employee } from 'src/app/model/employee';
+import { Employee } from 'src/app/model/employee.model';
 
 @Component({
   selector: 'app-employee-request',

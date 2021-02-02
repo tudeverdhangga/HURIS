@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Finance Accounting",
+      "employeeCount": "45"
+    },
+    {
+        "id": 2,
+        "name": "Human Resources",
+        "employeeCount": "37"
+    },
+    {
+        "id": 3,
+        "name": "IT Support",
+        "employeeCount": "60"
+    },
+    {
+        "id": 4,
+        "name": "Software Development",
+        "employeeCount": "70"
+    },
+    {
+        "id": 5,
+        "name": "Office Maintenance",
+        "employeeCount": "33"
+    }
+]

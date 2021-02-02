@@ -14,6 +14,7 @@ import { ConfirmationDialogComponent } from './pages/employee/confirmation-dialo
 import { EmployeeRequestComponent } from './pages/employee/employee-request/employee-request.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgKnifeModule } from 'ng-knife';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgKnifeModule } from 'ng-knife';
     AngularMaterialModule,
     NgbModule,
     ReactiveFormsModule,
-    NgKnifeModule
+    NgKnifeModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
