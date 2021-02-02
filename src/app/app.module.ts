@@ -13,6 +13,7 @@ import { EmployeeComponent } from './pages/employee/employee.component';
 import { ConfirmationDialogComponent } from './pages/employee/confirmation-dialog/confirmation-dialog.component';
 import { EmployeeRequestComponent } from './pages/employee/employee-request/employee-request.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgKnifeModule } from 'ng-knife';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgKnifeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
