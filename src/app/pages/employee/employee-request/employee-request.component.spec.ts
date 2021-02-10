@@ -31,5 +31,5 @@ describe('EmployeeRequestComponent', () => {
     component.form.controls['phone'].setValue('081999528039');
     component.form.controls['email'].setValue('tudeverdhangga@gmail.com');
     expect(component.form.valid).toBeTruthy();
-  })
+  });
 });
