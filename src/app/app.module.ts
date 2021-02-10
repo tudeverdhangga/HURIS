@@ -35,12 +35,9 @@ import { MatDialog } from '@angular/material/dialog';
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,
-    MatDialog,
-    NgDialogAnimationService,
     ReactiveFormsModule,
     NgKnifeModule,
     ChartsModule,
-    Router
   ],
   providers: [],
   bootstrap: [AppComponent],
