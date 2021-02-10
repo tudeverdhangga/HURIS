@@ -17,6 +17,7 @@ import { NgKnifeModule } from 'ng-knife';
 import { ChartsModule } from 'ng2-charts';
 import { NgDialogAnimationService } from 'ng-dialog-animation';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { Router } from '@angular/router';
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,
+    MatDialog,
     NgDialogAnimationService,
     ReactiveFormsModule,
     NgKnifeModule,
