@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { NgDialogAnimationService } from 'ng-dialog-animation';
 import { Employee } from 'src/app/model/employee.model';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';

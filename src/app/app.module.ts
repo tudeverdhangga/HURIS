@@ -15,6 +15,8 @@ import { EmployeeRequestComponent } from './pages/employee/employee-request/empl
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgKnifeModule } from 'ng-knife';
 import { ChartsModule } from 'ng2-charts';
+import { NgDialogAnimationService } from 'ng-dialog-animation';
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,11 @@ import { ChartsModule } from 'ng2-charts';
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,
+    NgDialogAnimationService,
     ReactiveFormsModule,
     NgKnifeModule,
-    ChartsModule
+    ChartsModule,
+    Router
   ],
   providers: [],
   bootstrap: [AppComponent],
