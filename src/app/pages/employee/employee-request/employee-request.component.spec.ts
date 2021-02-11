@@ -32,4 +32,31 @@ describe('EmployeeRequestComponent', () => {
     component.form.controls['email'].setValue('tudeverdhangga@gmail.com');
     expect(component.form.valid).toBeTruthy();
   });
+
+  //Unit test for title form
+  it('should return title for form', () => {
+    switch (component.mode) {
+      case "create":
+        expect(component.title).toEqual("Create Employee");
+        break;
+        case "edit":
+        expect(component.title).toEqual("Edit Employee");
+        break;
+        case "view":
+        expect(component.title).toEqual("View Employee");
+        break;
+        default:
+        expect(component.title).toEqual("Wrong Page");
+        break;
+    }
+  });
+
+  // Unit test for status isViewOnly
+  it('mode should view', () => {
+    if (component.mode == "view") {
+      expect(component.isViewOnly).toEqual(true);
+    } else {
+      expect(component.isViewOnly).toEqual(false);
+    }
+  });
 });
