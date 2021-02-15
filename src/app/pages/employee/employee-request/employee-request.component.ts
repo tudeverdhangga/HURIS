@@ -45,8 +45,8 @@ export class EmployeeRequestComponent implements OnInit {
     return this.mode == "view";
   }
 
-  get title() {
-    switch (this.mode) {
+  title(mode: String) {
+    switch (mode) {
       case "create":
         return "Create Employee";
         break;
