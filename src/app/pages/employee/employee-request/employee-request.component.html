@@ -1,6 +1,6 @@
 <mat-card ngClass="card-content p-4">
     <section class="mat-typography title-group">
-      <h1>{{title}}</h1>
+      <h1>{{title(mode)}}</h1>
     </section>
     <hr>
     <form (ngSubmit)="onSubmit()" [formGroup]="form">

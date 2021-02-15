@@ -34,21 +34,16 @@ describe('EmployeeRequestComponent', () => {
   });
 
   //Unit test for title form
-  it('should return title for form', () => {
-    switch (component.mode) {
-      case "create":
-        expect(component.title).toEqual("Create Employee");
-        break;
-        case "edit":
-        expect(component.title).toEqual("Edit Employee");
-        break;
-        case "view":
-        expect(component.title).toEqual("View Employee");
-        break;
-        default:
-        expect(component.title).toEqual("Wrong Page");
-        break;
-    }
+  it('title create employee', () => {
+    expect(component.title("create")).toEqual("Create Employee");
+  });
+
+  it('title edit employee', () => {
+    expect(component.title("edit")).toEqual("Edit Employee");
+  });
+
+  it('title view employee', () => {
+    expect(component.title("view")).toEqual("View Employee");
   });
 
   // Unit test for status isViewOnly
@@ -58,5 +53,12 @@ describe('EmployeeRequestComponent', () => {
     } else {
       expect(component.isViewOnly).toEqual(false);
     }
+  });
+
+  // Unit test for onSubmit function
+  it('should call onDelete function', () => {
+    spyOn(component, 'redirectBack').and.callThrough();
+    component.onSubmit();
+    expect(component.redirectBack).toHaveBeenCalled();
   });
 });
